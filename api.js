@@ -56,14 +56,38 @@ router.route('/contacts/:id').get((request,response)=>{
 
 })
 
-//POST
+//POST - create user
 router.route('/users').post((request,response)=>{
    console.log('post method');
     let user = {...request.body}
 
     dboperations.addUser(user).then(result => {
-       response.status(201).json(result);
+      console.log(result)
+      if(result=="ERROR")
+         response.status(500).json("ERROR");
+      else
+         response.status(200).json("Success");
     })
+
+})
+
+//POST - check if he is registed
+router.route('/users/isExist').post((request,response)=>{
+   console.log('post method');
+    let user = {...request.body}
+    console.log('users/isExist - POST ');
+     dboperations.isUserExist(user).then(result => {
+         response.status(200).json(result[0]);
+
+      //console.log(response)
+      //console.log(response.recordset)
+      // if(response)
+      //    response.status(200).send("Success");
+      // else
+      //     response.status(404).send("User not found");
+      //  else
+      //    response.status(404).send("User not found");
+     })
 
 })
 
