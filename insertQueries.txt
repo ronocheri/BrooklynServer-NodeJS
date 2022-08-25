@@ -1,0 +1,20 @@
+Insert into Users VALUES ('Jake','Jake')
+Insert into Users VALUES ('Amy','Amy')
+
+Insert into Contacts VALUES (1,'Jake',
+        'Peralta',
+        'Jake@gmail.com',
+        'Some description about Jake',
+        'https://www.nydailynews.com/resizer/gRTkbzPKWx7KwLOZEja-IerrVuo=/800x1067/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/3SPJVKUZWAMK2HP3PR2TEAETBU.jpg')
+		
+		Insert into Contacts VALUES (2,'Amy',
+        'Santiago',
+        'Amy@gmail.com',
+        'Some description about Amy',
+        'https://external-preview.redd.it/ztHiq52tfSakTV97n-XB6yBYbChO_bdhVA2KRcWyLB4.jpg?auto=webp&s=c071d261b169aa5b2fb5de501cc4909eeb340325')
+		
+		"firstName":"Amy",
+        "lastName":"Santiago",
+        "email":"Amy@gmail.com",
+        "desc":"Some description about Amy",
+        "image":"https://external-preview.redd.it/ztHiq52tfSakTV97n-XB6yBYbChO_bdhVA2KRcWyLB4.jpg?auto=webp&s=c071d261b169aa5b2fb5de501cc4909eeb340325"
